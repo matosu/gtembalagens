@@ -9,7 +9,7 @@ $quantidade = $_POST['quantidade'];
 
 $sql_code = "UPDATE produtos SET codigo_produto = '{$codigo_produto}', nome_produto = '{$nome_produto}', quantidade = {$quantidade} WHERE id = '$id'";
 
-$sql_query = mysqli_query($con, $sql_code);
+$con->query($sql_code);
 
 header("Location: ../html/home.php");
 

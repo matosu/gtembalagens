@@ -5,7 +5,7 @@ include('../php/config.php');
 if (!empty($_GET['id'])) {
 	$id = $_GET['id'];
 	$sql_code = "SELECT * FROM produtos WHERE id = $id";
-	$result = mysqli_query($con, $sql_code);
+	$result = $con->query($sql_code);
 
 	if (mysqli_num_rows($result) > 0) {
 		while ($produto = mysqli_fetch_assoc($result)) {

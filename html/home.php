@@ -7,7 +7,7 @@ if (!isset($_SESSION['logado'])) {
 }
 
 $sql_code = "SELECT * FROM produtos ORDER BY id";
-$sql_query = mysqli_query($con, $sql_code);
+$sql_query = $con->query($sql_code);
 ?>
 
 <!DOCTYPE html>

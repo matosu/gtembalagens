@@ -7,11 +7,6 @@
 </head>
 <body>
 	<h1>Login</h1>
-	<?php
-	if (isset($_SESSION['falta_info'])) {
-		echo "<p>Usuário/Senha não informados!</p>";
-	}
-	?>
 	<form action="../php/login.php" method="post">
 		<label for="usuario">Usuário</label>
 		<input type="text" name="usuario">
